@@ -1,6 +1,8 @@
 import openai
+from os import getenv
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = getenv("OPENAI_API_KEY")
+print(OPENAI_API_KEY)
 
 openai.api_key = OPENAI_API_KEY
 
